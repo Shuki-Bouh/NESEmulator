@@ -41,41 +41,41 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/shuki/CLion/NESEmulator/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target NESEmulator
+# Object build statements for EXECUTABLE target NESEmu
 
 
 #############################################
-# Order-only phony target for NESEmulator
+# Order-only phony target for NESEmu
 
-build cmake_object_order_depends_target_NESEmulator: phony || .
+build cmake_object_order_depends_target_NESEmu: phony || .
 
-build CMakeFiles/NESEmulator.dir/src/main.cpp.o: CXX_COMPILER__NESEmulator_unscanned_Debug /home/shuki/CLion/NESEmulator/src/main.cpp || cmake_object_order_depends_target_NESEmulator
-  DEP_FILE = CMakeFiles/NESEmulator.dir/src/main.cpp.o.d
+build CMakeFiles/NESEmu.dir/src/main.cpp.o: CXX_COMPILER__NESEmu_unscanned_Debug /home/shuki/CLion/NESEmulator/src/main.cpp || cmake_object_order_depends_target_NESEmu
+  DEP_FILE = CMakeFiles/NESEmu.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/NESEmulator.dir
-  OBJECT_FILE_DIR = CMakeFiles/NESEmulator.dir/src
+  OBJECT_DIR = CMakeFiles/NESEmu.dir
+  OBJECT_FILE_DIR = CMakeFiles/NESEmu.dir/src
 
-build CMakeFiles/NESEmulator.dir/src/registers.cpp.o: CXX_COMPILER__NESEmulator_unscanned_Debug /home/shuki/CLion/NESEmulator/src/registers.cpp || cmake_object_order_depends_target_NESEmulator
-  DEP_FILE = CMakeFiles/NESEmulator.dir/src/registers.cpp.o.d
+build CMakeFiles/NESEmu.dir/src/registers.cpp.o: CXX_COMPILER__NESEmu_unscanned_Debug /home/shuki/CLion/NESEmulator/src/registers.cpp || cmake_object_order_depends_target_NESEmu
+  DEP_FILE = CMakeFiles/NESEmu.dir/src/registers.cpp.o.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/NESEmulator.dir
-  OBJECT_FILE_DIR = CMakeFiles/NESEmulator.dir/src
+  OBJECT_DIR = CMakeFiles/NESEmu.dir
+  OBJECT_FILE_DIR = CMakeFiles/NESEmu.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target NESEmulator
+# Link build statements for EXECUTABLE target NESEmu
 
 
 #############################################
-# Link the executable NESEmulator
+# Link the executable NESEmu
 
-build NESEmulator: CXX_EXECUTABLE_LINKER__NESEmulator_Debug CMakeFiles/NESEmulator.dir/src/main.cpp.o CMakeFiles/NESEmulator.dir/src/registers.cpp.o
+build NESEmu: CXX_EXECUTABLE_LINKER__NESEmu_Debug CMakeFiles/NESEmu.dir/src/main.cpp.o CMakeFiles/NESEmu.dir/src/registers.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/NESEmulator.dir
+  OBJECT_DIR = CMakeFiles/NESEmu.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = NESEmulator
-  TARGET_PDB = NESEmulator.dbg
+  TARGET_FILE = NESEmu
+  TARGET_PDB = NESEmu.dbg
 
 
 #############################################
@@ -111,7 +111,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/shuki/CLion/NESEmulator/cmake-build-debug
 
-build all: phony NESEmulator
+build all: phony NESEmu
 
 # =============================================================================
 # Built-in targets
