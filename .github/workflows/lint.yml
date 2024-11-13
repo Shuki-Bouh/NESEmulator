@@ -1,0 +1,38 @@
+name: Lint C++ Emu
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  clang-tidy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: sudo apt-get install -y clang-tidy
+
+      - name: Configure and Build
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+
+      - name: Run Clang-Tidy
+        run: |
+          cd build
+          clang-tidy ../src/**/*.cpp -p=.
+        # Si le fichier .clang-tidy est présent à la racine, Clang-Tidy le détectera automatiquement.
+        # Si non, tu peux spécifier le chemin avec `-config=`
+
+      - name: Upload Clang-Tidy results
+        if: failure()
+        uses: actions/upload-artifact@v2
+        with:
+          name: clang-tidy-results
+          path: build

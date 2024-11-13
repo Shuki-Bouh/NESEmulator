@@ -18,7 +18,8 @@ NESEmu is an easy implamentation of an emulator of a NES. It is an educative pro
 ```bash
  sudo apt update && sudo apt upgrade
  sudo apt install cmake
- sudo apt install g++
+ sudo apt install g++ 
+ sudo apt install catch2
  ```
 
 ### 3. Compile the project:
