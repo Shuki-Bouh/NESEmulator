@@ -11,7 +11,7 @@ NESEmu is an easy implamentation of an emulator of a NES. It is an educative pro
 ## Installation
 ### 1. Clone the repository:
 ```bash
- git clone 
+ git clone https://github.com/Shuki-Bouh/NESEmulator.git
 ```
 
 ### 2. Install dependencies:
