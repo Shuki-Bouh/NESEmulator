@@ -26,7 +26,7 @@ jobs:
       - name: Run Clang-Tidy
         run: |
           cd build
-          clang-tidy ../src/**/*.cpp -p=.
+          clang-tidy ../src/*.cpp -p=.
         # Si le fichier .clang-tidy est présent à la racine, Clang-Tidy le détectera automatiquement.
         # Si non, tu peux spécifier le chemin avec `-config=`
 
