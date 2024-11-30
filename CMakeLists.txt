@@ -9,6 +9,10 @@ add_executable(NESEmu
         src/main.cpp
         src/registers.cpp
         src/registers.h
+        src/cpu.cpp
+        src/cpu.h
+        src/bus.cpp
+        src/bus.h
 )
 
 add_executable(Test test/test_test.cpp)
