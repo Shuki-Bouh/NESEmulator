@@ -8,6 +8,9 @@
 Bus::Bus() {
     // Clear RAM contents, just in case
     for (auto &i : ram) i = 0x00;
+
+    // Connect CPU to the bus
+    cpu.ConnectBus(this);
 }
 
 Bus::~Bus() {
